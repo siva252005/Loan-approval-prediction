@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bank Loan Approval Prediction</title>
+</head>
+<body>
+
+<h1>🏦 Bank Loan Approval Prediction 💳📊</h1>
+
+<p>
+This project predicts whether a loan application will be approved or rejected based on applicant details.
+</p>
+
+<p>
+Using <strong>Python, Machine Learning, FastAPI, and Streamlit</strong>, the project builds a complete ML pipeline:
+</p>
+
+<p>
+<strong>Data Collection → Data Cleaning → Feature Engineering → Model Training → API → Streamlit UI</strong>
+</p>
+
+<hr>
+
+<h2>📊 Project Status</h2>
+<p>✅ <strong>Project Completed</strong></p>
+
+<hr>
+
+<h2>🚀 How to Run this Project</h2>
+
+<ol>
+<li><strong>Setup Virtual Environment</strong><br>
+python -m venv .venv<br>
+activate (Windows: .venv\Scripts\activate)
+</li>
+
+<li><strong>Install Dependencies</strong><br>
+pip install -r requirements.txt
+</li>
+
+<li><strong>Train Model</strong><br>
+python train_model.py
+</li>
+
+<li><strong>Run Backend</strong><br>
+uvicorn backend.main:app --reload
+</li>
+
+<li><strong>Run Frontend</strong><br>
+streamlit run frontend/app.py
+</li>
+</ol>
+
+<p><em>Alternative commands available</em> :contentReference[oaicite:0]{index=0}</p>
+
+<hr>
+
+<h2>📊 Application Preview</h2>
+
+<p><strong>Loan Prediction Web App</strong></p>
+
+<ul>
+<li>Enter applicant details</li>
+<li>Predict loan approval (Approved / Rejected)</li>
+<li>Real-time prediction using ML model</li>
+</ul>
+
+<hr>
+
+<h2>📈 Key Insights</h2>
+
+<ul>
+<li>Credit History is the most important factor</li>
+<li>Higher income increases approval chances</li>
+<li>Loan amount affects approval probability</li>
+<li>Married applicants show higher approval rates</li>
+<li>Urban applicants have better approval rates</li>
+</ul>
+
+<hr>
+
+<h2>🛠 Skills Demonstrated</h2>
+
+<ul>
+<li>Data Cleaning using <strong>Python (Pandas)</strong></li>
+<li>Feature Engineering</li>
+<li>Machine Learning (Logistic Regression)</li>
+<li>Model Evaluation</li>
+<li>FastAPI Backend Development</li>
+<li>Streamlit UI Development</li>
+<li>Model Deployment</li>
+</ul>
+
+<hr>
+
+<h2>🏗️ Project Structure</h2>
+
+<pre>
+bank-loan-prediction/
+│
+├── README.md
+│
+├── data/
+│   └── train.csv
+│
+├── notebooks/
+│   └── loan-prediction-dataset-ml-project.ipynb
+│
+├── scripts/
+│   ├── train_model.py
+│   ├── inspect_model.py
+│   ├── try_load.py
+│   └── check_header.py
+│
+├── backend/
+│   ├── main.py
+│   └── model.pkl
+│
+├── frontend/
+│   └── app.py
+│
+├── model.pkl
+├── requirements.txt
+└── how to run.txt
+</pre>
+
+<hr>
+
+<h2>🚀 Implementation Phases</h2>
+
+<h3>🟩 Phase 1 – Dataset Collection</h3>
+<ul>
+<li>Collected loan dataset</li>
+<li>Analyzed features</li>
+<li>Identified missing values</li>
+</ul>
+<p><strong>Status:</strong> ✅ Completed</p>
+
+<hr>
+
+<h3>🟨 Phase 2 – Data Cleaning & Preprocessing</h3>
+<ul>
+<li>Handled missing values</li>
+<li>Removed unnecessary columns</li>
+<li>Encoded categorical variables</li>
+</ul>
+<p><strong>Status:</strong> ✅ Completed</p>
+
+<hr>
+
+<h3>🟦 Phase 3 – Feature Engineering</h3>
+<ul>
+<li>Converted dependents to numeric</li>
+<li>Selected important features</li>
+</ul>
+<p><strong>Status:</strong> ✅ Completed</p>
+
+<hr>
+
+<h3>🟧 Phase 4 – Model Training</h3>
+<ul>
+<li>Used Logistic Regression</li>
+<li>Split train/test data</li>
+<li>Calculated accuracy</li>
+</ul>
+<p><strong>Status:</strong> ✅ Completed</p>
+
+<hr>
+
+<h3>🟥 Phase 5 – Deployment</h3>
+<ul>
+<li>FastAPI backend</li>
+<li>Streamlit frontend</li>
+<li>Real-time predictions</li>
+</ul>
+<p><strong>Status:</strong> ✅ Completed</p>
+
+<hr>
+
+<h2>🛠 Technical Stack</h2>
+
+<table border="1" cellpadding="8" cellspacing="0">
+<tr>
+<th>Category</th>
+<th>Tools</th>
+</tr>
+
+<tr>
+<td>Data Processing</td>
+<td>Python, Pandas, NumPy</td>
+</tr>
+
+<tr>
+<td>Machine Learning</td>
+<td>Scikit-learn (Logistic Regression)</td>
+</tr>
+
+<tr>
+<td>Backend</td>
+<td>FastAPI, Uvicorn</td>
+</tr>
+
+<tr>
+<td>Frontend</td>
+<td>Streamlit</td>
+</tr>
+
+<tr>
+<td>Deployment</td>
+<td>Pickle (.pkl)</td>
+</tr>
+
+<tr>
+<td>Version Control</td>
+<td>Git, GitHub</td>
+</tr>
+</table>
+
+<hr>
+
+<h2>🎯 Workflow Pipeline</h2>
+
+<pre>
+Loan Dataset (CSV)
+        ↓
+Data Cleaning (Python)
+        ↓
+Feature Engineering
+        ↓
+Model Training
+        ↓
+Model Saved (model.pkl)
+        ↓
+FastAPI Backend
+        ↓
+Streamlit UI
+        ↓
+Loan Prediction Output
+</pre>
+
+<hr>
+
+<h2>💼 Interview Talking Point</h2>
+
+<p>
+<strong>
+Developed an end-to-end machine learning system for loan approval prediction. Implemented data preprocessing, feature engineering, trained a Logistic Regression model, and deployed it using FastAPI and Streamlit for real-time predictions.
+</strong>
+</p>
+
+<hr>
+
+<p><strong>Bank Loan Prediction Project 💳📊</strong></p>
+
+</body>
+</html>

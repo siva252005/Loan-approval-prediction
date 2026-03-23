@@ -1,0 +1,6 @@
+Component	Command
+Setup venv	python -m venv .venv & activate
+Install deps	pip install -r requirements.txt
+Train model	python train_model.py
+Run backend	uvicorn backend.main:app --reload
+Run UI   	streamlit run frontend/app.py
