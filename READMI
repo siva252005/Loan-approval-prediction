@@ -1,103 +1,76 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Bank Loan Approval Prediction</title>
-</head>
-<body>
+🏦 Bank Loan Approval Prediction 💳📊
 
-<h1>🏦 Bank Loan Approval Prediction 💳📊</h1>
-
-<p>
 This project predicts whether a loan application will be approved or rejected based on applicant details.
-</p>
 
-<p>
-Using <strong>Python, Machine Learning, FastAPI, and Streamlit</strong>, the project builds a complete ML pipeline:
-</p>
+Using Python, Machine Learning, FastAPI, and Streamlit, the project builds a complete ML pipeline from data preprocessing to deployment.
 
-<p>
-<strong>Data Collection → Data Cleaning → Feature Engineering → Model Training → API → Streamlit UI</strong>
-</p>
+Data Collection → Data Cleaning → Feature Engineering → Model Training → API Development → Streamlit UI
 
-<hr>
+---
 
-<h2>📊 Project Status</h2>
-<p>✅ <strong>Project Completed</strong></p>
+📊 Project Status
+✅ Project Completed
 
-<hr>
+---
 
-<h2>🚀 How to Run this Project</h2>
+🚀 How to Run this Project
 
-<ol>
-<li><strong>Setup Virtual Environment</strong><br>
-python -m venv .venv<br>
-activate (Windows: .venv\Scripts\activate)
-</li>
+### 1. Setup Virtual Environment
+python -m venv .venv
+source .venv/bin/activate   # Windows: .venv\Scripts\activate
 
-<li><strong>Install Dependencies</strong><br>
+### 2. Install Dependencies
 pip install -r requirements.txt
-</li>
 
-<li><strong>Train Model</strong><br>
+(Dependencies include FastAPI, scikit-learn, pandas, numpy, streamlit, xgboost, etc.) :contentReference[oaicite:0]{index=0}
+
+### 3. Train Model
 python train_model.py
-</li>
 
-<li><strong>Run Backend</strong><br>
+### 4. Run Backend API
 uvicorn backend.main:app --reload
-</li>
 
-<li><strong>Run Frontend</strong><br>
+### 5. Run Frontend (Streamlit UI)
 streamlit run frontend/app.py
-</li>
-</ol>
 
-<p><em>Alternative commands available</em> :contentReference[oaicite:0]{index=0}</p>
+(Alternative commands available) :contentReference[oaicite:1]{index=1}
 
-<hr>
+---
 
-<h2>📊 Application Preview</h2>
+📊 Application Preview
 
-<p><strong>Loan Prediction Web App</strong></p>
+Loan Prediction Web App
 
-<ul>
-<li>Enter applicant details</li>
-<li>Predict loan approval (Approved / Rejected)</li>
-<li>Real-time prediction using ML model</li>
-</ul>
+- Input applicant details
+- Predict loan approval (Approved / Rejected)
+- Real-time prediction using trained ML model
 
-<hr>
+---
 
-<h2>📈 Key Insights</h2>
+📈 Key Insights
 
-<ul>
-<li>Credit History is the most important factor</li>
-<li>Higher income increases approval chances</li>
-<li>Loan amount affects approval probability</li>
-<li>Married applicants show higher approval rates</li>
-<li>Urban applicants have better approval rates</li>
-</ul>
+- Credit History is the most important factor for loan approval
+- Higher Applicant Income increases approval chances
+- Loan Amount and Loan Term influence approval probability
+- Married applicants have slightly higher approval rates
+- Applicants in urban areas tend to get more approvals
 
-<hr>
+---
 
-<h2>🛠 Skills Demonstrated</h2>
+🛠 Skills Demonstrated
 
-<ul>
-<li>Data Cleaning using <strong>Python (Pandas)</strong></li>
-<li>Feature Engineering</li>
-<li>Machine Learning (Logistic Regression)</li>
-<li>Model Evaluation</li>
-<li>FastAPI Backend Development</li>
-<li>Streamlit UI Development</li>
-<li>Model Deployment</li>
-</ul>
+- Data Cleaning using Python (Pandas)
+- Feature Engineering
+- Machine Learning Model Building (Logistic Regression)
+- Model Evaluation (Accuracy Score)
+- API Development using FastAPI
+- Frontend Development using Streamlit
+- Model Deployment (End-to-End ML Pipeline)
 
-<hr>
+---
 
-<h2>🏗️ Project Structure</h2>
+🏗️ Project Structure
 
-<pre>
 bank-loan-prediction/
 │
 ├── README.md
@@ -124,135 +97,101 @@ bank-loan-prediction/
 ├── model.pkl
 ├── requirements.txt
 └── how to run.txt
-</pre>
 
-<hr>
+---
 
-<h2>🚀 Implementation Phases</h2>
+🚀 Implementation Phases
 
-<h3>🟩 Phase 1 – Dataset Collection</h3>
-<ul>
-<li>Collected loan dataset</li>
-<li>Analyzed features</li>
-<li>Identified missing values</li>
-</ul>
-<p><strong>Status:</strong> ✅ Completed</p>
+🟩 Phase 1 – Dataset Collection  
+Objective: Understand dataset structure.
 
-<hr>
+- Dataset obtained from online source
+- Analyzed features like income, credit history, loan amount
+- Identified missing values  
+Status: ✅ Completed
 
-<h3>🟨 Phase 2 – Data Cleaning & Preprocessing</h3>
-<ul>
-<li>Handled missing values</li>
-<li>Removed unnecessary columns</li>
-<li>Encoded categorical variables</li>
-</ul>
-<p><strong>Status:</strong> ✅ Completed</p>
+---
 
-<hr>
+🟨 Phase 2 – Data Cleaning & Preprocessing  
+Objective: Prepare dataset for ML model.
 
-<h3>🟦 Phase 3 – Feature Engineering</h3>
-<ul>
-<li>Converted dependents to numeric</li>
-<li>Selected important features</li>
-</ul>
-<p><strong>Status:</strong> ✅ Completed</p>
+- Handled missing values using mode
+- Removed unnecessary columns (Loan_ID)
+- Converted categorical data into numerical format  
+Status: ✅ Completed
 
-<hr>
+---
 
-<h3>🟧 Phase 4 – Model Training</h3>
-<ul>
-<li>Used Logistic Regression</li>
-<li>Split train/test data</li>
-<li>Calculated accuracy</li>
-</ul>
-<p><strong>Status:</strong> ✅ Completed</p>
+🟦 Phase 3 – Feature Engineering  
+Objective: Improve model performance.
 
-<hr>
+- Encoded categorical variables
+- Converted Dependents column to numeric
+- Selected important features  
+Status: ✅ Completed
 
-<h3>🟥 Phase 5 – Deployment</h3>
-<ul>
-<li>FastAPI backend</li>
-<li>Streamlit frontend</li>
-<li>Real-time predictions</li>
-</ul>
-<p><strong>Status:</strong> ✅ Completed</p>
+---
 
-<hr>
+🟧 Phase 4 – Model Training & Evaluation  
+Objective: Train ML model.
 
-<h2>🛠 Technical Stack</h2>
+- Algorithm used: Logistic Regression
+- Split dataset into training & testing
+- Evaluated using accuracy score (~model output)  
+Status: ✅ Completed
 
-<table border="1" cellpadding="8" cellspacing="0">
-<tr>
-<th>Category</th>
-<th>Tools</th>
-</tr>
+---
 
-<tr>
-<td>Data Processing</td>
-<td>Python, Pandas, NumPy</td>
-</tr>
+🟥 Phase 5 – Deployment  
+Objective: Build real-time prediction system.
 
-<tr>
-<td>Machine Learning</td>
-<td>Scikit-learn (Logistic Regression)</td>
-</tr>
+- Backend API using FastAPI
+- Frontend UI using Streamlit
+- Model integration using pickle (.pkl file)
+- Real-time predictions  
+Status: ✅ Completed
 
-<tr>
-<td>Backend</td>
-<td>FastAPI, Uvicorn</td>
-</tr>
+---
 
-<tr>
-<td>Frontend</td>
-<td>Streamlit</td>
-</tr>
+🛠 Technical Stack
 
-<tr>
-<td>Deployment</td>
-<td>Pickle (.pkl)</td>
-</tr>
+Category        Tools
+-----------------------------------
+Data Processing Python, Pandas, NumPy
+ML Model        Scikit-learn (Logistic Regression)
+Backend         FastAPI, Uvicorn
+Frontend        Streamlit
+Deployment      Pickle Model
+Version Control Git, GitHub
 
-<tr>
-<td>Version Control</td>
-<td>Git, GitHub</td>
-</tr>
-</table>
+---
 
-<hr>
+🎯 Workflow Pipeline
 
-<h2>🎯 Workflow Pipeline</h2>
-
-<pre>
 Loan Dataset (CSV)
         ↓
-Data Cleaning (Python)
+Data Cleaning (Python / Pandas)
         ↓
 Feature Engineering
         ↓
-Model Training
+Model Training (Logistic Regression)
         ↓
 Model Saved (model.pkl)
         ↓
 FastAPI Backend
         ↓
-Streamlit UI
+Streamlit Frontend
         ↓
-Loan Prediction Output
-</pre>
+Loan Approval Prediction
 
-<hr>
+---
 
-<h2>💼 Interview Talking Point</h2>
+💼 Interview Talking Point
 
-<p>
-<strong>
-Developed an end-to-end machine learning system for loan approval prediction. Implemented data preprocessing, feature engineering, trained a Logistic Regression model, and deployed it using FastAPI and Streamlit for real-time predictions.
-</strong>
-</p>
+Built an end-to-end machine learning system for bank loan approval prediction. Performed data preprocessing, feature engineering, and trained a Logistic Regression model. Deployed the model using FastAPI and created an interactive Streamlit interface for real-time predictions.
 
-<hr>
+---
 
-<p><strong>Bank Loan Prediction Project 💳📊</strong></p>
+🏁 Conclusion
 
-</body>
-</html>
+This project demonstrates a complete ML lifecycle including data processing, model building, and deployment into a real-world application.
