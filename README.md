@@ -20,7 +20,7 @@ Data Collection → Data Cleaning → Feature Engineering → Model Training →
 ```bash
 python -m venv .venv
 source .venv/bin/activate        # Linux/macOS
-# Windows: .venv\Scripts\activate
+.venv\Scripts\activate           # Windows
 ```
 
 ### 2. Install Dependencies
