@@ -71,32 +71,32 @@ Loan Prediction Web App
 
 🏗️ Project Structure
 
-bank-loan-prediction/
+PROJECT/
 │
-├── README.md
-│
-├── data/
-│   └── train.csv
-│
-├── notebooks/
-│   └── loan-prediction-dataset-ml-project.ipynb
-│
-├── scripts/
-│   ├── train_model.py
-│   ├── inspect_model.py
-│   ├── try_load.py
-│   └── check_header.py
+├── .venv/
 │
 ├── backend/
+│   ├── __pycache__/
 │   ├── main.py
 │   └── model.pkl
 │
 ├── frontend/
 │   └── app.py
 │
+├── venv/
+│
+├── .gitignore
+├── check_header.py
+├── how to run.txt
+├── inspect_model.py
+├── loan-prediction-dataset-ml-project.ipynb
 ├── model.pkl
+├── README.md
 ├── requirements.txt
-└── how to run.txt
+├── test.txt
+├── train_model.py
+├── train.csv
+└── try_load.py
 
 ---
 
