@@ -79,17 +79,18 @@ streamlit run frontend/app.py
 ---
 
 ## 🏗️ Project Structure
+```text
 PROJECT/
 │
 ├── .venv/ # Virtual environment
 │
 ├── backend/
-│ ├── _pycache_/ # Auto-generated cache
-│ ├── main.py # FastAPI backend
-│ └── model.pkl # Saved trained model
+│   ├── __pycache__/ # Auto-generated cache
+│   ├── main.py # FastAPI backend
+│   └── model.pkl # Saved trained model
 │
 ├── frontend/
-│ └── app.py # Streamlit UI
+│   └── app.py # Streamlit UI
 │
 ├── venv/ # Optional additional venv
 │
@@ -105,8 +106,7 @@ PROJECT/
 ├── train_model.py
 ├── train.csv # Dataset
 └── try_load.py
-
-text
+```
 
 ---
 
